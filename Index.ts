@@ -3,8 +3,8 @@
 import inquirer from 'inquirer';
 
 const asnwer = await inquirer.prompt([
-{message: 'Enter first number', type: 'number', name: 'firstNumber'},
-{message: 'Enter second number', type: 'number', name: 'secondNumber'},
+{message: 'Enter your first number', type: 'number', name: 'firstNumber'},
+{message: 'Enter your second number', type: 'number', name: 'secondNumber'},
 {
 message: 'Select one of the operators to perform action',
 type: 'list',
@@ -24,5 +24,6 @@ if (asnwer.operator === 'Addition') {
     console.log(asnwer.firstNumber / asnwer.secondNumber);
 }else {
     console.log('Please select a valid operator');
-}
+};
 
+console.log(`THE END`);
